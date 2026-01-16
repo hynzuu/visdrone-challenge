@@ -249,11 +249,6 @@ Detection 결과를 기반으로 객체 tracking을 수행하고, ID가 부여�
 - 낮은 confidence detection을 필터링하여 ID switch 감소
 
 <p align="center">
-  <img src="images/confidence_score_analysis.png" width="100%">
-  <br><em>Confidence Score 분포 분석</em>
-</p>
-
-<p align="center">
   <img src="images/f1_vs_confidence_threshold.png" width="100%">
   <br><em>F1 Score vs Confidence Threshold (클래스별)</em>
 </p>
