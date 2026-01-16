@@ -202,27 +202,16 @@ pedestrian 데이터는 풍부한 반면, people이나 bicycle 데이터는 상�
 
 ## 최종 결론
 
-#### 핵심 발견
+#### 핵심 인사이트
 
-1. **Resolution is King**
-   - 해상도 1024px로의 상향이 가장 효과적 (+74.8%)
-   - 작은 객체일수록 해상도 효과가 극대화됨 (Bicycle +214%)
-
-2. **Less is More**
-   - Mosaic OFF, Mixup, Rotation, Vertical Flip 등 모든 증강 조정이 실패
-   - YOLOv8 default augmentation이 이미 최적
-   - 원본 정보를 유지하는 것이 가장 효과적
-
-3. **데이터 불균형 지속**
-   - Bicycle (mAP50: 0.042, Recall: 9.3%)
-   - People (mAP50: 0.081, Recall: 25.2%)
-   - 절대 성능은 여전히 낮아 추가 개선 필요
+- 해상도 1024px 상향이 가장 효과적 (+74.8%), 작은 객체일수록 효과 극대화 (Bicycle +214%)
+- Mosaic OFF, Mixup, Rotation, Vertical Flip 등 모든 증강 조정 실패
+- YOLOv8 default augmentation이 이미 최적, 원본 정보 유지가 핵심
+- Bicycle/People 클래스는 절대 성능 여전히 낮아 추가 개선 필요
 
 #### 최종 선택
 
-**STEP 1: imgsz=1024, default augmentation**
-- mAP50: 0.229
-- 증강 기법 조정 없이 해상도만 증가시킨 상태가 최적
+**STEP 1: imgsz=1024, default augmentation (mAP50: 0.229)**
 
 #### 향후 계획
 
