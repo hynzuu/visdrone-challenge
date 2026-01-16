@@ -25,7 +25,7 @@ VisDrone 데이터셋에서 모델이 혼동하기 쉬운 클래스들을 선별
 
 전체 클래스 중 크기가 작으며 시각적으로 유사하여 모델이 혼동할 가능성이 높은 4개 클래스를 선정한다.
 
-* **Person Group:** pedestrian, people
+* **Person Group:** pedestria(걷거나 서있는 사람), people(탈것에 앉아있거나 서있는 자세가 아닌 사람)
 * **Two-wheeler Group:** bicycle, motor
 
 ## 핵심 문제점
