@@ -1,0 +1,16 @@
+# VisDrone Selected Classes Dataset
+# 4개 타겟 클래스: Pedestrian, People, Bicycle, Motor
+
+path: /Users/leehyunjoo/Desktop/visdrone/yolo_dataset_4class
+train: images/train
+val: images/val
+
+# Classes
+names:
+  0: pedestrian
+  1: people
+  2: bicycle
+  3: motor
+
+# Number of classes
+nc: 4

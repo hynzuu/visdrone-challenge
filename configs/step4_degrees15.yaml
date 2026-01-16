@@ -1,0 +1,38 @@
+# STEP 4 Configuration - Rotation Augmentation
+# 회전 증강: degrees=15 적용
+
+# Model
+model: yolov8n.pt
+
+# Training Parameters
+epochs: 10
+imgsz: 1024
+batch: 8
+device: cpu
+
+# Random Seed
+seed: 42
+
+# Data
+data: data.yaml
+
+# Optimization
+optimizer: auto
+lr0: 0.01
+momentum: 0.937
+weight_decay: 0.0005
+
+# Augmentation 
+mosaic: 1.0
+mixup: 0.0
+degrees: 15.0 # 추가
+
+# Validation
+val: true
+save: true
+save_period: -1
+
+# Project
+project: runs/detect
+name: step4_degrees15
+exist_ok: false

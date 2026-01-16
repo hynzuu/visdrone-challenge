@@ -1,0 +1,6 @@
+path: /Users/leehyunjoo/Desktop/visdrone/yolo_dataset_4class
+train: images/train
+val: images/val
+
+nc: 4
+names: ['pedestrian', 'people', 'bicycle', 'motor']

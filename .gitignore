@@ -1,0 +1,57 @@
+# Large datasets (exclude train/test, keep val for demo)
+VisDrone2019-DET-train/
+VisDrone2019-DET-test-dev/
+yolo_dataset_4class/images/
+yolo_dataset_4class/labels/
+
+# Training outputs (keep only step1 best model)
+runs/detect/step0_*/
+runs/detect/step2_*/
+runs/detect/step3_*/
+runs/detect/step4_*/
+runs/detect/step5_*/
+runs/detect/val*/
+runs/detect/runs/detect/step0_*/
+runs/detect/runs/detect/step2_*/
+runs/detect/runs/detect/step3_*/
+runs/detect/runs/detect/step4_*/
+runs/detect/runs/detect/step5_*/
+runs/detect/runs/detect/visdrone_*/
+
+# Tracking outputs (regenerated)
+tracking_output/
+
+# Video files (regenerated)
+*.avi
+*.mp4
+
+# Model weights (keep only step1 best model)
+runs/**/*.pt
+!runs/detect/runs/detect/step1_imgsz1024/weights/best.pt
+
+# Keep base model
+# yolov8n.pt
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+dataset_analysis.ipynb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
