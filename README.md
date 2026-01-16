@@ -38,6 +38,8 @@ VisDrone 데이터셋에서 모델이 혼동하기 쉬운 클래스들을 선별
 - **bicycle-motor:** 자전거와 오토바이의 전체적인 구조가 유사하여 구분이 어려움
 
 #### 데이터 불균형
+<img width="989" height="589" alt="image" src="https://github.com/user-attachments/assets/cc4d513d-b390-4e63-a85d-572475946e0a" />
+
 pedestrian 데이터는 풍부한 반면, people이나 bicycle 데이터는 상대적으로 적어 모델이 데이터가 많은 클래스 쪽으로 예측하려는 편향이 발생한다.
 
 ---
