@@ -21,6 +21,12 @@ bash run_tracking.sh
 
 VisDrone 데이터셋에서 모델이 혼동하기 쉬운 클래스들을 선별하여, **작은 객체 탐지(Small Object Detection)** 성능을 높이고 **유사 클래스 간 오분류(Class Confusion)** 를 줄이는 것을 목표로 한다.
 
+## 데이터셋
+
+- **출처**: VisDrone2019-DET (http://aiskyeye.com/)
+- **Train**: VisDrone2019-DET-train에서 샘플링한 800장
+- **Val**: VisDrone2019-DET-val에서 샘플링한 200장
+
 ## 타겟 클래스
 
 전체 클래스 중 크기가 작으며 시각적으로 유사하여 모델이 혼동할 가능성이 높은 4개 클래스를 선정한다.
@@ -38,9 +44,13 @@ VisDrone 데이터셋에서 모델이 혼동하기 쉬운 클래스들을 선별
 - **bicycle-motor:** 자전거와 오토바이의 전체적인 구조가 유사하여 구분이 어려움
 
 #### 데이터 불균형
-<img width="989" height="589" alt="image" src="https://github.com/user-attachments/assets/cc4d513d-b390-4e63-a85d-572475946e0a" />
+학습 데이터(800장, 28,129개 객체)의 클래스 분포 불균형:
+- pedestrian: 50.07% (14,084개)
+- people: 23.18% (6,521개)
+- bicycle: 8.20% (2,307개)
+- motor: 18.55% (5,217개)
 
-pedestrian 데이터는 풍부한 반면, people이나 bicycle 데이터는 상대적으로 적어 모델이 데이터가 많은 클래스 쪽으로 예측하려는 편향이 발생한다.
+pedestrian이 절반을 차지하는 반면 bicycle은 8%에 불과해 모델이 다수 클래스 쪽으로 예측하려는 편향이 발생할 수 있을 것으로 예상된다.
 
 ---
 
